@@ -1,0 +1,10 @@
+tensorflow>=2.13,<2.15                  
+numpy>=1.23,<1.26              
+opencv-python>=4.7,<5.0        
+pillow>=9.0,<10.0              
+pdf2image>=1.16,<2.0           
+PyMuPDF>=1.21,<1.24            
+transformers>=4.30,<4.33       
+torch>=2.0,<2.1                
+gradio>=3.30,<3.40             
+gtts>=2.3,<2.4                
