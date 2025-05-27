@@ -88,12 +88,12 @@ ResNet solves the vanishing gradient problem in deep networks.
 [▶️ Watch Demo](https://drive.google.com/file/d/18CgIOKvCjeyroPFnBN53CKDyW2QS-ZJq/view?usp=sharing)
 
 ## 🖼️ Screenshots:
-![OCR Output](screenshots/ocr_example.png)
+![OCR Output](OCR_output.png)
 
 ## 💻 How to Run Locally
-git clone https://github.com/AnnapurnaKalmath/OCR-and-Multi-Function-Document-Processing-Prototype
-cd OCR-and-Multi-Function-Document-Processing-Prototype
-pip install -r requirements.txt
-python ocr_webapp/app.py
+- git clone https://github.com/AnnapurnaKalmath/OCR-and-Multi-Function-Document-Processing-Prototype
+- cd OCR-and-Multi-Function-Document-Processing-Prototype
+- pip install -r requirements.txt
+- python ocr_webapp/app.py
 
 Gradio will launch your app in a browser tab.
