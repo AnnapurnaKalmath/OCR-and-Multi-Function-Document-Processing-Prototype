@@ -60,12 +60,40 @@ A powerful **AI-based document analysis tool** with a **custom-trained OCR engin
 ├── dataset/
 │   └── (0-9, A-Z, a-z)     # 21K labeled character images
 
+```
 ---
 
-## 🔗 Skip Connections in ResNet
-Skip connections are the core innovation in ResNet that allow us to train very deep networks.
+## Skip Connections in ResNet
+ResNet solves the vanishing gradient problem in deep networks.
+- It introduces skip connections: the output of a layer is added to the output of a deeper layer.
+- This ensures original information is retained, helps gradient flow smoothly, and speeds up convergence.
+- In our OCR model, a lightweight ResNet-style CNN was used for character-level recognition.
 
-🧠 Why Skip Connections?
-In traditional CNNs, deeper layers lead to vanishing gradients. ResNet solves this using residual connections:
+⚠️ When using pre-trained ResNet models (e.g., for transfer learning), we typically freeze early layers (which extract general features like edges and textures) and fine-tune the later layers for task-specific adaptation.
 
-Instead of just passing the transformed output forward, we add the original input back in:
+## 💬 Why BART for Summarization?
+- BART is a powerful sequence-to-sequence model pretrained on denoising and text generation.
+- It supports abstractive summarization (generates new sentences rather than picking them from the input).
+- Deployed via Hugging Face’s pipeline("summarization") — super easy to integrate.
+
+## 🚀 Future Scope
+- Add bounding box detection to switch from character-based to word-level OCR.
+- Support multilingual documents using language-agnostic embeddings.
+- Incorporate Named Entity Recognition (NER) to extract people, places, and organizations.
+- Deploy via Hugging Face Spaces / Streamlit / Flask for public access.
+- Optionally integrate voice-based query input using SpeechRecognition.
+
+## 🎬 Demo
+### 📽️ Screen Recording:
+[▶️ Watch Demo](https://drive.google.com/file/d/18CgIOKvCjeyroPFnBN53CKDyW2QS-ZJq/view?usp=sharing)
+
+## 🖼️ Screenshots:
+![OCR Output](screenshots/ocr_example.png)
+
+## 💻 How to Run Locally
+git clone https://github.com/AnnapurnaKalmath/OCR-and-Multi-Function-Document-Processing-Prototype
+cd OCR-and-Multi-Function-Document-Processing-Prototype
+pip install -r requirements.txt
+python ocr_webapp/app.py
+
+Gradio will launch your app in a browser tab.
