@@ -89,6 +89,9 @@ ResNet solves the vanishing gradient problem in deep networks.
 
 ## 🖼️ Screenshots:
 ![OCR Output](OCR_output.png)
+![Keyword Search Output](Keyword_search_output.png)
+![Text to Speech Output](TTS_output.png)
+![Text Summarizer Output](Summarization_output.png)
 
 ## 💻 How to Run Locally
 - git clone https://github.com/AnnapurnaKalmath/OCR-and-Multi-Function-Document-Processing-Prototype
@@ -97,3 +100,15 @@ ResNet solves the vanishing gradient problem in deep networks.
 - python ocr_webapp/app.py
 
 Gradio will launch your app in a browser tab.
+
+## 🤝 Built With
+- OpenCV for image processing
+- [PyTorch / TensorFlow] for OCR model training (update based on what you used)
+- Transformers by Hugging Face
+- gTTS for audio output
+- Gradio for front-end interface
+
+## 🧠 Built By
+- Annapurna N Kalmath
+Final year ECE undergrad | Aspiring AI-Neuroscience researcher
+- And awesome teammates Divya Bhagwat, Prathibha Angadi and Ashwini Hadagali
